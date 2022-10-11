@@ -4,6 +4,8 @@
 }
 html, body
 {
+    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    scroll-behavior: smooth;
     height: 100%;
     background-color: #111D2C;
 }
@@ -33,7 +35,7 @@ nav p{
 nav ol li a{
     text-decoration: none;
     color: white;
-    font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    
 }
 nav ol li {
     list-style: none;
@@ -52,19 +54,19 @@ nav ol{
 main {
     grid-column:2;
     display: grid;
-    grid-template-columns: 1fr;
-    display: flex;
-    justify-content: center;
+    grid-template-rows: repeat(5,100vh);
+    
 }
-.bio{
-    grid-column: 1;
-    text-align: center;
+
+#bio{
+    margin-top: 8%;
+    grid-row: 1;
     font-weight: normal;
+    text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 50px;
-    position: absolute;
-    top: 10%;
+    justify-content: center;
 }
 main img{
     border: solid #3883BC 3px;
@@ -76,11 +78,11 @@ main div p span {
 main .social{
     margin-top: 40px;
 }
-main .bio .social ol li{
+main #bio .social ol li{
     list-style: none;
     display: inline-block;
 }
-main .bio .social ol li a{
+main #bio .social ol li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -88,11 +90,11 @@ main .bio .social ol li a{
     padding: 10px;
     border-radius:100px ;
 } 
-main .bio .social ol li :hover{
+main #bio .social ol li :hover{
     background-color:#3883BC;
     color: white;
 } 
-main .bio button{
+main #bio button{
     background-color: Transparent;
     border:solid 0.5px #3883BC;
     border-radius: 9px;
@@ -101,7 +103,51 @@ main .bio button{
     padding-left: 30px;
     padding-right: 30px;
 }
-main .bio button:hover{
+main #bio button:hover{
     background-color: #3883BC;
     color: white;
 }
+
+main #about {
+    display: block;
+    align-items: center;
+    grid-row: 2;
+}
+main #about {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 25px;
+}
+main #about :nth-child(1){
+    grid-column: 1;
+}
+main #about :nth-child(1) .title_skills{
+    color: #3883BC;
+    font-size: 30px;
+}
+main #about :nth-child(1) .p_skills{
+    color:white;
+    padding: 20px;
+
+}
+main #about :nth-child(2){
+    grid-column: 2;
+}
+.line{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+.line span{
+    color: white;
+    font-weight: 100;
+}
+.line .bars{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 10px;
+    width: 80%;
+}
+
+
+
