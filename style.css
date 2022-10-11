@@ -26,7 +26,6 @@ nav p{
     position: absolute;
     left: 10%;
     top: 5%;
-
     color: #3883BC;
     font-size: large;
     font-weight: bold;
@@ -109,7 +108,7 @@ main #bio button:hover{
     color: white;
 }
 main #about {
-    display: block;
+    display: flex;
     align-items: center;
     grid-row: 2;
 }
@@ -237,12 +236,15 @@ main  #service .services div .icons i{
     font-size: 30px;
 }
 main  #service .services div .icons p{
-    color: #3883BC;
     font-weight: bold;
     font-size: 20px;
 }
 
-
+main  #service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
