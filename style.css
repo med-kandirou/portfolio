@@ -198,11 +198,26 @@ main #service div #serv_title{
     font-weight: bold;
     margin-bottom: 50px;
 }
+
 main #service .services {
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+main  #service .services div{
+    border: 1px solid white;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: #272b2f;
+    width: 60%;
+    padding-left:8% ;
+    padding-right:8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 main #service .services .web{
+
     grid-column: 1;
 }
 main #service .services .app{
@@ -211,13 +226,20 @@ main #service .services .app{
 main #service .services .desktop{
     grid-column: 3;
 }
-
 main #service .services div :nth-child(2){
     color: white;
     font-size: 16px;
     text-align: justify;
-    padding-left:8% ;
-    padding-right:8%;
+}
+
+main  #service .services div .icons i{
+    color: #3883BC;
+    font-size: 30px;
+}
+main  #service .services div .icons p{
+    color: #3883BC;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
