@@ -323,12 +323,20 @@ main #team .stuff div .jobs{
 }
 main #team .stuff div{
     animation-name: colorer;
-    animation-duration: 4s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
+main #team .stuff div:hover{
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 12px 9px 0px -4px rgba(125, 125, 125, 0.52);
+    
+}
 @keyframes colorer {
-    from {background-color: #272b2f;}
-    to {background-color: #3883BC;}
+    0%   {background-color: #272b2f;}
+    25%  {background-color: #3883BC}
+    50%  {background-color: #272b2f;}
+    100% {background-color: #3883BC}
 }
 
 
