@@ -203,7 +203,7 @@ main #service .services {
     grid-template-columns: repeat(3,1fr);
 }
 main  #service .services div{
-    border: 1px solid white;
+    border: 5px solid white;
     border-color: transparent;
     border-radius: 8px;
     background-color: #272b2f;
@@ -244,6 +244,18 @@ main  #service {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+main  #service .services :nth-child(1){
+    border-top-color: #3883BC;
+    border-left-color: #3883BC; 
+}
+main  #service .services :nth-child(3){
+    border-bottom-color: #3883BC;
+    border-right-color: #3883BC;
+}
+main  #service .services div:hover {
+    color: white;
+    background-color: #3883BC;
 }
 
 
