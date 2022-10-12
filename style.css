@@ -370,6 +370,7 @@ main #contact .fields .form {
 }
 main #contact .fields .form label{
     color: white;
+    margin-bottom: 20px;
 }
 
 main #contact .fields .form input{
@@ -379,11 +380,27 @@ main #contact .fields .form input{
     border-radius:8px;
     border-width: 2px;
 }
+
 main #contact .fields .form textarea{
     width: 70%;
     border-color: #111D2C;
     border-radius:8px;
     border-width: 2px;
+}
+main #contact .fields .form button{
+    cursor: pointer;
+    background-color: #111D2C;
+    border:solid 0.5px #111D2C;
+    border-radius:8px;
+    color:white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 70%;
+}
+main #contact .fields .form button:hover{
+    cursor: pointer;
+    background-color:#3883BC ;
 }
 
 
