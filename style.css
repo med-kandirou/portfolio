@@ -125,7 +125,6 @@ main #about :nth-child(1) .title_skills{
     color: #3883BC;
     font-size: 30px;
     padding-left: 20px;
-    font-weight: bold;
     letter-spacing: 3px;
 }
 main #about :nth-child(1) .p_skills{
@@ -194,7 +193,6 @@ main #service div #serv_title{
     font-size: 30px;
     letter-spacing: 3px;
     text-align: center;
-    font-weight: bold;
     margin-bottom: 50px;
 }
 
@@ -269,7 +267,6 @@ main #team #team_title{
     font-size: 30px;
     letter-spacing: 3px;
     text-align: center;
-    font-weight: bold;
     margin-bottom: 50px;
 }
 main #team .stuff{
@@ -339,16 +336,19 @@ main #team .stuff div:hover{
     100% {background-color: #3883BC}
 }
 main #contact{
+    display: flex;
+    align-items: center;
     grid-row: 5;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-color: #3883BC;
 }
 main #contact .icon{
     grid-column: 1;
 }
 main #contact .icon img{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     border: 1px solid;
     border-radius: 0;
     border-color: transparent;
@@ -358,15 +358,32 @@ main #contact .icon img{
 main #contact .fields{
     grid-column: 2;
 }
-main #contact .fields label{
+
+main #contact .fields #par{
     color: white;
-    font-size: 15px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
 }
-main #contact .fields input,textarea{
+main #contact .fields .form {
+    margin-bottom: 25px;
+}
+main #contact .fields .form label{
+    color: white;
+}
+
+main #contact .fields .form input{
     width: 70%;
     height: 30px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    border-color: #111D2C;
+    border-radius:8px;
+    border-width: 2px;
+}
+main #contact .fields .form textarea{
+    width: 70%;
+    border-color: #111D2C;
+    border-radius:8px;
+    border-width: 2px;
 }
 
 
