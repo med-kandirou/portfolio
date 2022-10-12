@@ -216,7 +216,6 @@ main  #service .services div{
     margin-right: auto;
 }
 main #service .services .web{
-
     grid-column: 1;
 }
 main #service .services .app{
@@ -230,7 +229,6 @@ main #service .services div :nth-child(2){
     font-size: 16px;
     text-align: justify;
 }
-
 main  #service .services div .icons i{
     color: #3883BC;
     font-size: 30px;
@@ -257,6 +255,84 @@ main  #service .services div:hover {
     color: white;
     background-color: #3883BC;
 }
+/*team*/
+main #team{
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main #team #team_title{
+    display: grid;
+    grid-template-rows: 20%;
+    color: #3883BC;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+main #team .stuff{
+    background-color:rgba(39, 43, 47,0,4)  ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+main #team .stuff div ol li {
+    list-style: none; 
+}
+main #team .stuff div ol li i{
+    margin-top: 20px;
+    color: white;
+    
+}
+main #team .stuff div ol {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+main #team .stuff div img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    border-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main #team .stuff div{
+    background:#272b2f ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid;
+    border-color: transparent;
+    border-radius: 20px;
+    margin: 20px;
+    padding-top:40px;
+    padding-bottom:40px;
+    opacity: 0.9;
+}
+main #team .stuff div .names{
+    color: white;
+    font-size: 25px;
+}
+main #team .stuff div .jobs{
+    color: white;
+    font-size: 18px;
+    opacity: 0.5;
+}
+main #team .stuff div{
+    animation-name: colorer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorer {
+    from {background-color: #272b2f;}
+    to {background-color: #3883BC;}
+}
+
+
+
 
 
 
