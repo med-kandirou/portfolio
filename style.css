@@ -323,7 +323,7 @@ main #team .stuff div .jobs{
 }
 main #team .stuff div{
     animation-name: colorer;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 main #team .stuff div:hover{
@@ -340,7 +340,35 @@ main #team .stuff div:hover{
 }
 main #contact{
     grid-row: 5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
+main #contact .icon{
+    grid-column: 1;
+}
+main #contact .icon img{
+    width: 50%;
+    height: 50%;
+    border: 1px solid;
+    border-radius: 0;
+    border-color: transparent;
+    display: block;
+    margin: auto;
+}
+main #contact .fields{
+    grid-column: 2;
+}
+main #contact .fields label{
+    color: white;
+    font-size: 15px;
+}
+main #contact .fields input,textarea{
+    width: 70%;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
 
 
 
