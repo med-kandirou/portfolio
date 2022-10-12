@@ -338,7 +338,9 @@ main #team .stuff div:hover{
     50%  {background-color: #272b2f;}
     100% {background-color: #3883BC}
 }
-
+main #contact{
+grid-row: 4;
+}
 
 
 
